@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/CryptoAbsolute-Client">
       <Routes>
         <Route path="" element={<Layout />}>
           <Route element={<PrivateRoute />}>
