@@ -1,0 +1,23 @@
+.centering {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form{
+  text-align: center;
+  padding: 30px;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 250px;
+}
+
+input{
+  padding: 5px;
+  font-size: 13px;
+}

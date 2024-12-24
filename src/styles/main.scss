@@ -1,0 +1,72 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "normalize";
+
+:root {
+  /* Common variables */
+  --primary-color: #7b56e1;
+  --warning-color: #ddbc49;
+  --success-color: #3eb466;
+  --danger-color: #c32e2e;
+  --accent-color: #455eb5;
+  /* Dark mode (by default) */
+  --secondary-color: #21232e;
+  --border-color: #2c2d3c;
+  --text-color: #e8e6e3;
+  --bg-color: #181a1b;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Light mode */
+    --secondary-color: #fcfcfd;
+    --border-color: #f1f1f3;
+    --text-color: #1a1a1a;
+    --bg-color: #ffffff;
+  }
+}
+
+:root[theme="light"] {
+  --secondary-color: #fcfcfd;
+  --border-color: #f1f1f3;
+  --text-color: #1a1a1a;
+  --bg-color: #ffffff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+input{
+  outline: none;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  &:focus{
+    box-shadow: 1px 1px 14px var(--secondary-color);
+  }
+}
+
+
+button{
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 6px;
+  cursor: pointer;
+  &:hover{
+    box-shadow: 1px 1px 14px var(--border-color);
+  }
+}
+
+.button{
+  
+}
+
+.title{
+  padding: 0;
+
+}
